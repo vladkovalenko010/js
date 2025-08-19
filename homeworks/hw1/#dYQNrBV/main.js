@@ -27,19 +27,3 @@ console.log(n6);
 console.log(n7);
 console.log(b1);
 console.log(b2);
-
-// #6Qb97gsv
-
-let firstName = 'Vladyslav';
-let middleName = 'Serhiiyovych';
-let lastName = 'Kovalenko';
-
-let person = `${firstName} ${middleName} ${lastName}`;
-
-// #4N0y5tufA
-
-let a = 100;
-let b = '100';
-let c = true;
-
-console.log(typeof a, a, typeof b, b, typeof c, c);
