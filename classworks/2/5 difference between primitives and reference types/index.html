@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+//Примітивні типи
+//number, string(50/50), boolean
+//при копіюванні віддають своє значення
+
+let a = 100;
+let b = a;
+b = b + 10; //b = 110; a = 100
+
+let user = {name: 'Vasya'}
+let user2 = user;
+user2.age = 31;
+
+console.log(user); //з'явився вік, хоча й був заданий для юзер2
+console.log(user2); //з'явився вік
+
+//в цьому прикладі обидві змінні посилаються на один і той же об'єкт
+//тому ці змінні мають референційний тип даних
+
+</script>
+
+</body>
+</html>
