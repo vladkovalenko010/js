@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    function writer(prodTitle, price, desc) {
+        document.write(`
+         <div>
+         <h2>${prodTitle} ${price}</h2>
+         <p>${desc}</p>
+</div>
+        `);
+    }
+
+    writer('milk', 23, 'some milk');
+    writer('juice', 40, 'some juice');
+    writer('beef', 70, 'some beef');
+    writer('carrot', 30, 'some carrot');
+
+    function printer(array) {
+        for (const arrayElement of array) {
+            console.log(arrayElement);
+        }
+    }
+
+</script>
+
+</body>
+</html>

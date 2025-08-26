@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    // function calc(a, b) {
+    //     let result = a + b;
+    //     return result;
+    // }
+    //
+    // let r1 = calc(1, 2);
+    // let r2 = calc(2, 3);
+    //
+    // console.log(r1, r2);
+
+    // function percentage(csh, per) {
+    //     return csh / 100 * per;
+    // }
+    //
+    // function tax(sum) {
+    //     return sum - percentage(sum, 20) - percentage(sum, 1.5);
+    // }
+    //
+    // let number = tax(10000);
+    // console.log(number);
+
+    let users = [
+        {name: "John", surname: "Doe", email: "john@example.com", age: 25},
+        {name: "Mary", surname: "Doe", email: "mary@example.com", age: 27},
+        {name: "Jane", surname: "Doe", email: "jane@example.com", age: 32},
+        {name: "Jack", surname: "Doe", email: "jack@example.com", age: 35}
+    ]
+
+    function userFilter(users) {
+        let filteredUsers = [];
+        for (const user of users) {
+            if (user.age > 30) {
+                filteredUsers.push(user);
+            }
+        }
+
+    }
+
+    userFilter(users);
+
+</script>
+
+</body>
+</html>
