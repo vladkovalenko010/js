@@ -195,7 +195,6 @@ let currencies = [
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
 
     for (const item of currencyValues) {
-        let result = 0;
         if (exchangeCurrency === item.currency) {
             return sumUAH / item.value;
             }
