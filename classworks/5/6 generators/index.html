@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    // function *foo() {
+    //     yield 1;
+    //     yield 2;
+    //     yield 3;
+    // }
+    //
+    // console.log(foo());
+    //
+    // let fooGen = foo();
+    // console.log(fooGen);
+    // console.log(fooGen.next());
+    // console.log(fooGen.next());
+    // console.log(fooGen.next());
+    // console.log(fooGen.next());
+
+    function* cardsHolder() {
+        const cards = [
+            {value:4, suite:'diamond'},
+            {value:8, suite:'spade'},
+            {value:2, suite:'diamond'},
+            {value:3, suite:'spade'},
+        ];
+
+        for (const card of cards) {
+            yield card;
+        }
+    }
+
+    let cardsHolderGen = cardsHolder();
+    console.log(cardsHolderGen.next());
+    console.log(cardsHolderGen.next());
+    console.log(cardsHolderGen.next());
+    console.log(cardsHolderGen.next());
+    console.log(cardsHolderGen.next());
+</script>
+
+</body>
+</html>
