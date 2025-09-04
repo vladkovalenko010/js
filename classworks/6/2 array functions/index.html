@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+let arr = [1, 2, 3, 4, 10];
+
+console.log(Array.isArray(arr));
+
+arr[arr.length] = 100;
+
+arr.push(5);
+console.log(arr);
+
+arr.pop();
+
+console.log(arr.pop());
+console.log(arr);
+
+arr.unshift('!!!');
+console.log(arr);
+
+console.log(arr.shift());
+console.log(arr);
+
+let str = '';
+for (const arrElement of arr) {
+    str+=arrElement+';';
+}
+console.log(str);
+
+let join = arr.join(', ');
+console.log(join);
+
+let nums = [11, 22, 33];
+let concat = arr.concat(nums);
+console.log(concat);
+
+console.log(nums);
+console.log(nums.reverse());
+
+console.log(concat);
+console.log(concat.slice(0, 4));
+
+// console.log(concat.splice(0, 2));
+// console.log(concat);
+
+console.log(concat.indexOf(11));
+concat.splice(concat.indexOf(11), 1);
+
+console.log(concat.includes(2));
+
+</script>
+
+</body>
+</html>
